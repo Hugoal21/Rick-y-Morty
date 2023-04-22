@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url("https://i.pinimg.com/originals/4d/14/b0/4d14b0b9a46c30e60c9694866fae2850.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Estilo para header */
+header {
+  max-width: 100%;
+  min-height: 150px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 2px solid #0808fc;
+}
+
+.letras img {
+  width: 400px;
+  padding: 10px;
+}
+
+.rick-morty img{
+  height: 280px;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 200;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #88fc08;
+}
+
+nav a:hover {
+  color: #88fc08;
+}
+
+/* Configuración del main seccion sinopsis */
+.sinopsis-container {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(163, 163, 165, 0.634);
+  border-radius: 15px;
+  border: 2px solid #0808fc;
+}
+
+.titulo-h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #88fc08;
+  -webkit-text-stroke: 2px #0808fc;
+}
+
+.sinopsis-container img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sinopsis-container div{
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Estilos para la grilla de personajes */
+.titulo-personajes {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(163, 163, 165, 0.634);
+  color: #88fc08;
+  -webkit-text-stroke: 2px #88fc08;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #0808fc;
+  -webkit-text-stroke: 2px #0808fc;
+}
+
+#characters-grid {
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.character-card {
+  border: 2px solid #0808fc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(163, 163, 165, 0.634);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 2px solid #0808fc;
+}
+
+.character-card h3 {
+  color: #000;
+}
+
+.character-card p {
+  color: #000;
+}
+.character-card:hover {
+  background-color: rgba(140, 197, 240, 0.722);
+}
+/* Estiliza la tercera seccion del main para ver los episodios */
+
+.informacion-capitulos {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(163, 163, 165, 0.634);
+  border-radius: 10px;
+  border: 2px solid #0808fc;
+}
+
+.informacion-capitulos img {
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 2px solid #0808fc;
+}
+
+.titulo-mira-la-serie {
+    font-size: 40px;
+    font-weight: 600;
+    color: #88fc08;
+    -webkit-text-stroke: 2px #0808fc;
+  }
+  
+  .informacion-capitulos div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+/* Estilo de la Biografia */
+
+.biografia {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(163, 163, 165, 0.634);
+  border-radius: 10px;
+  border: 2px solid #0808fc;
+}
+
+.titulo-biografia {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #88fc08;
+  -webkit-text-stroke: 2px #0808fc;
+}
+
+.biografia div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Footer con informacion del creador */
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  header {
+    min-height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .letras img {
+    width: 100%;
+  }
+
+  .rick-morty img {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .sinopsis-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .sinopsis-container p {
+    font-size: smaller;
+  }
+
+  #characters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    min-height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .letras img {
+    width: 100%;
+  }
+
+  .rick-morty img {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .sinopsis-container div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sinopsis-container p {
+    font-size: smaller;
+  }
+}
